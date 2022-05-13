@@ -14,3 +14,12 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-wrapper > * {
+  flex-basis: 33%;
+}
