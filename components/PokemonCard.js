@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { capitalizeFirstLetter } from "./utility";
 
+import styles from "../styles/Card.module.css";
+
 const PokemonCard = ({ name, apiLink }) => {
   const [pokemonTypes, setPokemonTypes] = useState([]);
   const typeList = pokemonTypes.map((obj) => {
@@ -20,7 +22,7 @@ const PokemonCard = ({ name, apiLink }) => {
   };
 
   return (
-    <div className="pokemon-card">
+    <div className={styles.pokemon_card}>
       <h3>{capitalizeFirstLetter(name)}</h3>
       <p>Type(s): {typeList.join(", ")}</p>
     </div>

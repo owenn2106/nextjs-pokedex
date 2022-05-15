@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 import PokemonCard from "./PokemonCard";
 
-const Pokemon = () => {
+const Pokemons = () => {
   const [pokemons, setPokemons] = useState([]);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const Pokemon = () => {
   );
 };
 
-export default Pokemon;
+export default Pokemons;
 
 // export async function getServerSideProps(context) {
 //   const res = await fetch("https://pokeapi.co/api/v2/pokemon/");

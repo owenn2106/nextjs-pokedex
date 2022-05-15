@@ -18,8 +18,9 @@ a {
 .card-wrapper {
   display: flex;
   flex-wrap: wrap;
+  gap: 1em;
 }
 
 .card-wrapper > * {
-  flex-basis: 33%;
+  flex-basis: 30%;
 }

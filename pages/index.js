@@ -1,7 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 
-import Pokemon from "../components/Pokemon";
+import Pokemons from "../components/Pokemons";
 
 export default function Home() {
   return (
@@ -12,7 +12,7 @@ export default function Home() {
 
       <main>
         <h1>Pokedex</h1>
-        <Pokemon />
+        <Pokemons />
       </main>
     </div>
   );
